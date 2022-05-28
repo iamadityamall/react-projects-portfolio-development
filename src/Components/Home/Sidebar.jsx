@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-center justify-center space-y-4
+      className={`fixed translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4
         ${!showSidebar && "translate-x-full"}
       }`}
     >
@@ -17,7 +17,7 @@ const Sidebar = () => {
           <NavLink
             key={link.id}
             to={link.path}
-            className="p-2 text-4xl capitalize "
+            className="p-2 text-4xl capitalize mr-10"
           >
             {link.name}
           </NavLink>
