@@ -1,13 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router";
 import { Navbar, Footer } from "../Components/Home/";
-import { Sidebar } from "../Components/Home/index";
 
 const SharedLayout = () => {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Navbar />
-      <Sidebar />
       <Outlet />
       <Footer />
     </main>
