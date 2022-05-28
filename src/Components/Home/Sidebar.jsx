@@ -22,7 +22,7 @@ const Sidebar = () => {
             duration={500}
             delay={200}
             isDynamic={true}
-            className="p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20"
+            className={`translate-all duration-1000 ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${showSidebar && 'translate-x-0'}`}
           >
             {link.name}
           </Link>

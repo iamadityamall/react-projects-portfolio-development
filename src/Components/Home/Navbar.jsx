@@ -36,7 +36,7 @@ const Navbar = () => {
           })}
         </ul>
         <button
-          className="p-3 lg:hidden"
+          className="p-3 lg:hidden translate-all duration-500 ease-in-out"
           onClick={() => dispatch(toggleSidebarButton(!showSidebar))}
         >
           <ButtonAnimation showSidebar={showSidebar} />
