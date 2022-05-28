@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
   return (
-    <div>Projects</div>
-  )
-}
+    <section id="projects" className="border-2 border-black lg:h-screen flex  justify-center items-center">
+      <h1 className="text-5xl">projects</h1>
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;

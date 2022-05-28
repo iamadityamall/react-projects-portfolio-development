@@ -2,25 +2,25 @@ export const navLinks = [
   {
     id: 0,
     name: "home",
-    path: "/",
+    path: "hero",
     icon: "",
   },
   {
     id: 1,
     name: "about",
-    path: "#about",
+    path: "about",
     icon: "",
   },
   {
     id: 0,
     name: "projects",
-    path: "#projects",
+    path: "projects",
     icon: "",
   },
   {
     id: 0,
     name: "contact",
-    path: "#contacts",
+    path: "contact",
     icon: "",
   },
 ];

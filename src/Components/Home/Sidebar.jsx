@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
 import { navLinks } from "../../utils/data/Navlinks";
+import { Link } from "react-scroll/modules";
 
 const Sidebar = () => {
   const { showSidebar } = useSelector((store) => store.navbar);
@@ -14,13 +14,18 @@ const Sidebar = () => {
     >
       {navLinks.map((link) => {
         return (
-          <NavLink
+          <Link
             key={link.id}
             to={link.path}
-            className="p-2 text-4xl capitalize mr-10"
+            spy={true}
+            smooth={true}
+            duration={500}
+            delay={200}
+            isDynamic={true}
+            className="p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20"
           >
             {link.name}
-          </NavLink>
+          </Link>
         );
       })}
     </aside>
