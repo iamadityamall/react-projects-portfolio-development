@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4
+      className={`fixed translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4 bg-transparent shadow-lg
         ${!showSidebar && "translate-x-full"}
       }`}
     >
@@ -24,7 +24,7 @@ const Sidebar = () => {
             duration={500}
             delay={200}
             isDynamic={true}
-            className={`translate-all duration-[2000ms] ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${
+            className={`translate-all duration-[2000ms] ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-white font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${
               showSidebar && "translate-x-0"
             }`}
             onClick={() => dispatch(toggleSidebarButton(false))}
