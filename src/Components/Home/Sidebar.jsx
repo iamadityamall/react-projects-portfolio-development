@@ -1,10 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { navLinks } from "../../utils/data/Navlinks";
 import { Link } from "react-scroll/modules";
+import { toggleSidebarButton } from "../../Features/Navbar/navSlice";
 
 const Sidebar = () => {
   const { showSidebar } = useSelector((store) => store.navbar);
+  const dispatch = useDispatch();
 
   return (
     <aside
@@ -22,7 +24,10 @@ const Sidebar = () => {
             duration={500}
             delay={200}
             isDynamic={true}
-            className={`translate-all duration-[2000ms] ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${showSidebar && 'translate-x-0'}`}
+            className={`translate-all duration-[2000ms] ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-black font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${
+              showSidebar && "translate-x-0"
+            }`}
+            onClick={() => dispatch(toggleSidebarButton(false))}
           >
             {link.name}
           </Link>

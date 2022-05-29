@@ -12,13 +12,13 @@ export const navLinks = [
     icon: "",
   },
   {
-    id: 0,
+    id: 2,
     name: "projects",
     path: "projects",
     icon: "",
   },
   {
-    id: 0,
+    id: 3,
     name: "contact",
     path: "contact",
     icon: "",
