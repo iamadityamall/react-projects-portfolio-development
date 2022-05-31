@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed top-0 z-10 translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4 bg-transparent shadow-lg z-20
+      className={`fixed top-0 translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4  shadow-lg z-10
         ${!showSidebar && "translate-x-full"}
       }`}
     >

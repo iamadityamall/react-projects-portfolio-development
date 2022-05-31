@@ -3,7 +3,7 @@
 const ButtonAnimation = ({ showSidebar }) => {
   return (
     <div
-      className={`transition-all duration-500 ease-in-out flex flex-col space-y-2 items-center justify-center shadow-md ${
+      className={`transition-all duration-500 ease-in-out flex flex-col space-y-2 items-center justify-center ${
         showSidebar && "space-y-0"
       }`}
     >
@@ -13,7 +13,7 @@ const ButtonAnimation = ({ showSidebar }) => {
         }`}
       ></div>
       <div
-        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg bg-white ${
+        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg bg-[#06113C] ${
           showSidebar && "bg-[#413F42] -rotate-45 -translate-y-1"
         }`}
       ></div>
