@@ -8,12 +8,12 @@ const ButtonAnimation = ({ showSidebar }) => {
       }`}
     >
       <div
-        className={`transition-all duration-500 ease-in-out h-1 w-9 bg-[#06113C] rounded-lg ${
+        className={`transition-all duration-500 ease-in-out h-1 w-9 bg-[#413F42] rounded-lg ${
           showSidebar && "bg-[#413F42] rotate-45"
         }`}
       ></div>
       <div
-        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg bg-[#06113C] ${
+        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg bg-[#413F42] ${
           showSidebar && "bg-[#413F42] -rotate-45 -translate-y-1"
         }`}
       ></div>
