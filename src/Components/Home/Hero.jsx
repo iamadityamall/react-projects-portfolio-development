@@ -7,7 +7,7 @@ const Hero = () => {
       id="hero"
       className="translate-all duration-[2000ms] ease-in-out bg-[url('/public/profile-new.png')] h-screen w-screen bg-cover flex items-center "
     >
-      <div className="translate-all duration-[2000ms] ease-in-out w-[90vw] bg-white/90 rounded-lg flex flex-col space-y-4 py-10 px-2 sm:w-[75vw] md:w-[75vw]">
+      <div className="translate-all duration-[2000ms] ease-in-out w-[90vw] bg-white/80 rounded-lg flex flex-col space-y-4 py-10 px-2 sm:w-[75vw] md:w-[75vw]">
         <h6 className="text-sm font-bold font-poppins">Hi, my name is </h6>
         <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-1">
           <span className="text-4xl font-poppins">ADITYA MALL.</span>
