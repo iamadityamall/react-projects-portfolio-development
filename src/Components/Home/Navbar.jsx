@@ -12,7 +12,7 @@ const Navbar = () => {
   const { showSidebar } = useSelector((store) => store.navbar);
 
   return (
-    <header className="w-full fixed top-0 bg-transparent overflow-hidden transition-all duration-500 ease-in-out">
+    <header className="w-full fixed top-0 overflow-hidden transition-all duration-500 ease-in-out">
       <nav className=" transition-all duration-500 ease-in-out flex justify-between p-2 w-[95vw] mx-auto sm:w-[90vw] md:w-[85vw] md:p-4 lg:w-[80vw] xl:w-[75vw]">
         <div className="transition-all duration-500 ease-in-out text-4xl py-4">
           logo
