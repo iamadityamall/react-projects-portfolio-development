@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
         <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-6 items-start">
           <button className="mt-4 px-6 py-4 bg-black text-white rounded-lg font-poppins">
-            Hire me
+            Hire_me
           </button>
           <div className="translate-all duration-[2000ms] ease-in-out flex space-x-5  items-center justify-start">
             {socialLinks.map((link) => {

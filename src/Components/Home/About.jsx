@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="transition-all duration-200 ease-in-out mt-11 grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2"
+      className="transition-all duration-200 ease-in-out mt-10 grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2"
     >
       {/* image container */}
       <figure className="transition-all duration-200 ease-in-out mr-8 overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-full md:rounded-none md:mr-0">
@@ -16,7 +16,7 @@ const About = () => {
         />
       </figure>
       {/* info container */}
-      <div className="transition-all duration-200 ease-in-out flex flex-col items-center space-y-5 text-justify p-4">
+      <div className="transition-all duration-200 ease-in-out flex flex-col items-center space-y-8 text-justify p-4">
         <div className="transition-all duration-200 ease-in-out flex justify-start">
           <h1 className="transition-all duration-200 ease-in-out font-bold font-poppins text-4xl py-1 border-b-4 border-black">
             About Me
@@ -40,8 +40,8 @@ const About = () => {
             iure consequatur magni tempora porro architecto!
           </p>
         </div>
-        <button className="transition-all duration-200 ease-in-out p-4 bg-black text-white font-poppins font-bold  rounded-lg w-full">
-          resume
+        <button className="transition-all duration-200 ease-in-out p-4 bg-black text-white font-poppins rounded-lg w-full">
+          Resu_me
         </button>
       </div>
     </section>
