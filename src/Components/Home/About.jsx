@@ -23,7 +23,7 @@ const About = () => {
           </h1>
           {/* <p>Aditya Mall</p> */}
         </div>
-        <div className="transition-all duration-200 ease-in-out">
+        <div className="transition-all duration-200 ease-in-out flex flex-col space-y-2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             vitae amet magnam earum, et impedit voluptates repudiandae!
