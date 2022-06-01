@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2"
+      className="mt-11 grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2"
     >
       {/* image container */}
       <figure className="mr-8 overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-full md:rounded-none md:mr-0">
