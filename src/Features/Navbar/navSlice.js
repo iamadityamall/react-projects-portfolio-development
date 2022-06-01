@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   showSidebar: false,
+  isDarkmode: false,
 };
 
 const navSlice = createSlice({
@@ -11,8 +12,11 @@ const navSlice = createSlice({
     toggleSidebarButton: (state, action) => {
       state.showSidebar = action.payload;
     },
+    toggleDarkmodeButton: (state) => {
+      state.isDarkmode = !state.isDarkmode;
+    },
   },
 });
 
-export const { toggleSidebarButton } = navSlice.actions;
+export const { toggleSidebarButton, toggleDarkmodeButton } = navSlice.actions;
 export const navReducer = navSlice.reducer;

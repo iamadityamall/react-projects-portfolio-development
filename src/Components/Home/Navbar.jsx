@@ -6,13 +6,16 @@ import { toggleSidebarButton } from "../../Features/Navbar/navSlice";
 import { Sidebar } from "./index";
 import { navLinks } from "../../utils/data/Navlinks.js";
 import { Link } from "react-scroll/modules";
+import { MdDarkMode } from "react-icons/md";
+import { BsSunFill } from "react-icons/bs";
+import { toggleDarkmodeButton } from "../../Features/Navbar/navSlice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const { showSidebar } = useSelector((store) => store.navbar);
+  const { showSidebar, isDarkmode } = useSelector((store) => store.navbar);
 
   return (
-    <header className="w-full fixed top-0 overflow-hidden transition-all duration-500 ease-in-out bg-white">
+    <header className={`w-full z-10 fixed top-0 overflow-hidden transition-all duration-500 ease-in-out ${isDarkmode ? 'bg-black': 'bg-white'}`}>
       <nav className=" transition-all duration-500 ease-in-out flex justify-between p-2 w-[95vw] mx-auto sm:w-[90vw] md:w-[85vw] md:p-4 lg:w-[80vw] xl:w-[75vw]">
         <div className="transition-all duration-500 ease-in-out text-4xl py-4">
           AM
@@ -35,12 +38,21 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <button
-          className="lg:hidden translate-all duration-500 ease-in-out fixed right-3 top-10 z-20"
-          onClick={() => dispatch(toggleSidebarButton(!showSidebar))}
-        >
-          <ButtonAnimation showSidebar={showSidebar} />
-        </button>
+        <div className="flex items-center md:text-3xl  md:mr-2 md:mb-2">
+          <button onClick={() => dispatch(toggleDarkmodeButton())} >
+            {isDarkmode ? (
+              <BsSunFill className="-translate-x-12 text-3xl md:-translate-x-0" />
+            ) : (
+              <MdDarkMode className="-translate-x-12 text-3xl md:-translate-x-0" />
+            )}
+          </button>
+          <button
+            className="lg:hidden translate-all duration-500 ease-in-out fixed right-3 top-10 z-50"
+            onClick={() => dispatch(toggleSidebarButton(!showSidebar))}
+          >
+            <ButtonAnimation showSidebar={showSidebar} />
+          </button>
+        </div>
       </nav>
       <Sidebar />
     </header>
