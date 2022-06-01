@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="h-screen grid grid-cols-1 items-center justify-items-end md:grid-cols-2 lg:mt-10"
+      className="mt-32 md:mt-0 md:h-screen grid grid-cols-1 items-center justify-items-end md:grid-cols-2 lg:mt-10"
     >
       <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-2 py-10 px-4 ">
         <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-2">
