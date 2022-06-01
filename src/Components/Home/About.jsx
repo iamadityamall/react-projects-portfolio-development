@@ -28,6 +28,7 @@ const About = () => {
             consectetur adipisicing elit. Mollitia facere illum earum eaque
             alias maxime saepe reprehenderit unde nam praesentium?
           </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure harum vitae, veniam quis in animi pariatur delectus rerum eveniet iusto, reiciendis, non atque adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia ex sit voluptatum fugiat iure consequatur magni tempora porro architecto!</p>
         </div>
         <button className="p-4 bg-black text-white font-poppins font-bold  rounded-lg w-full">
           resume
