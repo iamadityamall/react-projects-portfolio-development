@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="w-full fixed top-0 overflow-hidden transition-all duration-500 ease-in-out">
       <nav className=" transition-all duration-500 ease-in-out flex justify-between p-2 w-[95vw] mx-auto sm:w-[90vw] md:w-[85vw] md:p-4 lg:w-[80vw] xl:w-[75vw]">
         <div className="transition-all duration-500 ease-in-out text-4xl py-4">
-          logo
+          AHM
         </div>
         <ul className="transition-all duration-500 ease-in-out hidden lg:grid lg:grid-cols-4 lg:items-center lg:justify-items-center lg:gap-x-4">
           {navLinks.map((link) => {
