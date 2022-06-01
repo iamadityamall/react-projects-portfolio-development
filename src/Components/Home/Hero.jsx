@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="h-[80vh] flex justify-center items-center"
+      className="h-screen flex justify-between items-center"
     >
       <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-4 py-10 px-4 ">
         <h6 className="text-sm font-bold font-poppins">Hi, my name is </h6>
@@ -44,6 +44,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
