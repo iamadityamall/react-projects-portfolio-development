@@ -5,14 +5,14 @@ import { Link } from "react-scroll/modules";
 import { toggleSidebarButton } from "../../Features/Navbar/navSlice";
 
 const Sidebar = () => {
-  const { showSidebar } = useSelector((store) => store.navbar);
+  const { showSidebar, isDarkmode } = useSelector((store) => store.navbar);
   const dispatch = useDispatch();
 
   return (
     <aside
-      className={`fixed top-0 translate-all duration-500 ease-in-out  h-screen w-screen bg-white lg:hidden flex flex-col items-end justify-center space-y-4  shadow-lg z-30
+      className={`fixed top-0 translate-all duration-500 ease-in-out  h-screen w-screen lg:hidden flex flex-col items-end justify-center space-y-4  shadow-lg z-30
         ${!showSidebar && "translate-x-full"}
-      }`}
+      } ${isDarkmode ? 'bg-black': 'bg-white'}`}
     >
       {navLinks.map((link) => {
         return (

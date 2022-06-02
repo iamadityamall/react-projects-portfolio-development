@@ -1,6 +1,8 @@
 // import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 const ButtonAnimation = ({ showSidebar }) => {
+  const { isDarkmode } = useSelector((store) => store.navbar);
   return (
     <div
       className={`transition-all duration-500 ease-in-out flex flex-col space-y-2 items-center justify-center ${
@@ -8,14 +10,14 @@ const ButtonAnimation = ({ showSidebar }) => {
       }`}
     >
       <div
-        className={`transition-all duration-500 ease-in-out h-1 w-9 bg-[#413F42] rounded-lg ${
-          showSidebar && "bg-[#413F42] rotate-45"
-        }`}
+        className={`transition-all duration-500 ease-in-out h-1 w-9  rounded-lg ${
+          !isDarkmode ? "bg-black" : "bg-white"
+        } ${showSidebar && " rotate-45"}`}
       ></div>
       <div
-        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg bg-[#413F42] ${
-          showSidebar && "bg-[#413F42] -rotate-45 -translate-y-1"
-        }`}
+        className={`transition-all duration-500 ease-in-out h-1 w-9 rounded-lg ${
+          !isDarkmode ? "bg-black" : "bg-white"
+        } ${showSidebar && " -rotate-45 -translate-y-1"}`}
       ></div>
     </div>
   );
