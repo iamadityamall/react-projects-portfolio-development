@@ -14,7 +14,7 @@ module.exports = {
       keyframes: {
         flow: {
           "0%": { left: 0 },
-          "100%": { left: -766 },
+          "100%": { left: -957 },
         },
       },
     },
