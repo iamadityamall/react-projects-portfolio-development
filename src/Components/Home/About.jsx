@@ -10,7 +10,7 @@ const About = () => {
       className="transition-all duration-200 ease-in-out grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2 md:gap-y-0 md:gap-x-2 md:h-screen md:place-items-center"
     >
       {/* image container */}
-      <figure className="transition-all duration-200 ease-in-out mr-8 overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-auto  md:mr-0 md:rounded-xl xl:h-[70vh] xl:w-fit">
+      <figure className="transition-all duration-200 ease-in-out overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-auto  md:mr-0 md:rounded-xl xl:h-[70vh] xl:w-fit">
         <img
           src={aboutImage}
           alt="about"
