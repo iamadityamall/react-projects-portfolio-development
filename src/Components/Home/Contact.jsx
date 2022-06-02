@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id="contact" className="grid grid-cols-1 gap-y-8 py-20">
       <div className="flex flex-col items-center space-y-2">
-        <h1 className="text-4xl font-bold font-poppins border-b-2 border-black">
+        <h1 className="text-4xl font-bold font-poppins border-b-4  border-black">
           Contacts
         </h1>
         <p className="font-poppins text-sm px-2 text-justify pt-4">
