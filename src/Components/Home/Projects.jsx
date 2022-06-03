@@ -26,11 +26,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="transition-all duration-200 ease-in-out md:h-screen flex flex-col space-y-10 py-20"
+      className="transition-all duration-200 ease-in-out flex flex-col space-y-10 py-10"
     >
-      <div className="transition-all duration-200 ease-in-out flex flex-col items-center space-y-2 font-poppins">
-        <h1 className="transition-all duration-200 ease-in-out text-5xl border-b-4 border-black">
-          projects
+      <div className="transition-all duration-200 ease-in-out flex flex-col items-center space-y-2 font-poppins md:grid md:grid-cols-2">
+        <h1 className="transition-all duration-200 ease-in-out text-4xl font-bold border-b-4 border-black p-1">
+          Projects
         </h1>
         {/* <p className="text-sm">things i have build.</p> */}
       </div>

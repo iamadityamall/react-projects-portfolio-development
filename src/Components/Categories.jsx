@@ -24,3 +24,4 @@ const Categories = ({ categories, filterCategoryWise, value }) => {
 };
 
 export default Categories;
+   
