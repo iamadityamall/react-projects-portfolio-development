@@ -3,7 +3,7 @@ import aboutImage from "../../assests/images/baby.jpg";
 import { useSelector } from "react-redux";
 
 const About = () => {
-  const {isDarkmode} = useSelector(store => store.navbar)
+  const { isDarkmode } = useSelector((store) => store.navbar);
   return (
     <section
       id="about"
@@ -27,19 +27,33 @@ const About = () => {
         </div>
         <div className="transition-all duration-500 ease-in-out flex flex-col space-y-2 font-poppins text-sm md:text-justify md:p-2 xl:p-0 xl:text-lg">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            vitae amet magnam earum, et impedit voluptates repudiandae!
-            Molestiae libero qui minus consequuntur ipsum. Nesciunt atque nihil
-            similique dolore ipsum adipisci! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Mollitia facere illum earum eaque
-            alias maxime saepe reprehenderit unde nam praesentium?
+            Before coding, I volunteered as a soccer coach and tech support
+            intern at a local school. In 2022, I took a leap and trained in
+            modern app development at udemy. Check out some of my work in the
+            Projects section.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure harum
-            vitae, veniam quis in animi pariatur delectus rerum eveniet iusto,
-            reiciendis, non atque adipisci? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Deleniti quia ex sit voluptatum fugiat
-            iure consequatur magni tempora porro architecto!
+            Hi, I am Aditya, a self taught frontend developer. My goal is to
+            become a software engineer and build scalable, interactive web
+            apps. Feel free to Connect or Follow me on my{" "}
+            <span className="text-gray-800 font-semibold">
+              <a
+                href="https://linkedin.com/in/adityaharendramall/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin
+              </a>
+            </span>{" "}
+            where I post useful content related to Web Development and
+            Programming
+          </p>
+          <p>
+            I'm open to <span className="text-gray-800 font-semibold">Job</span>{" "}
+            opportunities where I can contribute, learn and grow. If you have a
+            good opportunity that matches my skills and experience then don't
+            hesitate to{" "}
+            <span className="text-gray-800 font-semibold">contact me</span>.
           </p>
         </div>
         <button

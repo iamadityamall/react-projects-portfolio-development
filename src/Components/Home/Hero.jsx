@@ -2,6 +2,7 @@ import React from "react";
 import { socialLinks } from "../../utils/data/SocialLinks";
 import heroImage from "../../assests/images/profile-new.png";
 import { useSelector } from "react-redux";
+import Link from "react-scroll/modules/components/Link";
 
 const Hero = () => {
   const { isDarkmode } = useSelector((store) => store.navbar);
@@ -31,13 +32,20 @@ const Hero = () => {
           opportunities.
         </p>
         <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-6 items-start">
-          <button
-            className={`mt-4 px-6 py-4 bg-black text-white rounded-lg font-poppins ${
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            delay={200}
+            offset={-50}
+            isDynamic={true}
+            className={`mt-4 px-6 py-4 bg-black text-white rounded-lg font-poppins cursor-pointer ${
               isDarkmode && "bg-white text-black"
             }`}
           >
             Hire me
-          </button>
+          </Link>
           <div className="translate-all duration-[2000ms] ease-in-out flex space-x-5  items-center justify-start">
             {socialLinks.map((link) => {
               const { id, path, icon } = link;

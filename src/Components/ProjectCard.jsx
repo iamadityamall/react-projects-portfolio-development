@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ name, image, category, info, url }) => {
   const translateFull = (id) => {
@@ -34,7 +34,7 @@ const ProjectCard = ({ name, image, category, info, url }) => {
             <span className="bg-gray-500 px-2 py-1">react</span>
           </div>
           <figure className="text-2xl flex space-x-5 items-center">
-            <FaGithub />
+            {/* <FaGithub /> */}
             <a
               href={url}
               target="_blank"

@@ -6,7 +6,7 @@ import {SiCsswizardry, SiTailwindcss, SiJavascript} from "react-icons/si"
 
 const ClientLogo = () => {
   return (
-    <section className="transition-all duration-200 ease-in-out grid grid-cols-1 py-14 lg:pt-0 lg:pb-14 justify-items-center gap-y-4 items-center md:grid-cols-3 md:gap-y-0">
+    <section className="transition-all duration-200 ease-in-out grid grid-cols-1 py-14 lg:pt-0 lg:pb-14 justify-items-center gap-y-4 items-center md:grid-cols-3 md:gap-y-0 lg:mb-32">
       <div>
         <h1 className="transition-all duration-200 ease-in-out text-4xl font-bold font-poppins border-b-4 border-black md:text-5xl lg:text-7xl">
           Skills

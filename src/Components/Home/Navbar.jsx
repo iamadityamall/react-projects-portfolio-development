@@ -29,6 +29,7 @@ const Navbar = () => {
                 key={link.id}
                 smooth={true}
                 duration={500}
+                offset={-50}
                 delay={200}
                 isDynamic={true}
                 className="transition-all duration-150 ease-in-out capitalize p-2 hover:border-b-2 hover:border-black font-montserrat hover:font-bold cursor-pointer"

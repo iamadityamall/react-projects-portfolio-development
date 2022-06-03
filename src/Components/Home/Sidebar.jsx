@@ -23,6 +23,7 @@ const Sidebar = () => {
             smooth={true}
             duration={500}
             delay={200}
+            offset={-100}
             isDynamic={true}
             className={`translate-all duration-[2000ms] ease-in-out p-2 text-4xl capitalize mr-10 cursor-pointer hover:border-b-2 border-white font-montserrat hover:font-bold md:mr-20 translate-x-[400px] ${
               showSidebar && "translate-x-0"
