@@ -8,42 +8,37 @@ const categories = [
   "all",
   ...new Set(projects.map((project) => project.category)),
 ];
-console.log(categories);
 
 const Projects = () => {
   const [list, setList] = useState(projects);
+  const [value, setValue] = useState(0);
 
-  const filterCategoryWise = (category) => {
+  const filterCategoryWise = (category, index) => {
+    setValue(index);
     if (category === "all") {
       return setList(projects);
     } else {
       const newList = projects.filter((item) => item.category === category);
-      highlightSelectedButton(category);
-      console.log(newList);
       return setList(newList);
     }
-  };
-
-  const highlightSelectedButton = (buttonName) => {
-    const btn = document.querySelector(`#${buttonName}`);
-    btn.style.borderBottom = "2px solid black";
   };
 
   return (
     <section
       id="projects"
-      className="transition-all duration-200 ease-in-out md:h-screen flex flex-col space-y-5 "
+      className="transition-all duration-200 ease-in-out md:h-screen flex flex-col space-y-10 py-20"
     >
       <div className="transition-all duration-200 ease-in-out flex flex-col items-center space-y-2 font-poppins">
         <h1 className="transition-all duration-200 ease-in-out text-5xl border-b-4 border-black">
           projects
         </h1>
-        <p className="text-sm">things i have build.</p>
+        {/* <p className="text-sm">things i have build.</p> */}
       </div>
-      <div>
+      <div className="mt-5 transition-all duration-200">
         <Categories
           categories={categories}
           filterCategoryWise={filterCategoryWise}
+          value={value}
         />
       </div>
       <div className="py-5 transition-all duration-200 ease-in-out grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3 xl:grid-cols-4 ">

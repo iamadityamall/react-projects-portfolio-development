@@ -1,4 +1,6 @@
-const ProjectCard = ({ name, image, category, info }) => {
+import { FaGithub } from "react-icons/fa";
+
+const ProjectCard = ({ name, image, category, info, url }) => {
   const translateFull = (id) => {
     const aside = document.querySelector(`#${id}`);
     aside.style.transform = "translateY(0)";
@@ -9,7 +11,7 @@ const ProjectCard = ({ name, image, category, info }) => {
   };
   return (
     <article
-      className="transition-all duration-700 ease-in-out relative w-full h-56  rounded-lg overflow-hidden cursor-pointer shadow-xl lg:hover:scale-105"
+      className="transition-all duration-700 ease-in-out relative w-full h-56  rounded-lg overflow-hidden cursor-pointer shadow-2xl lg:hover:scale-105"
       onMouseOver={() => translateFull(name)}
       onMouseLeave={() => translateZero(name)}
     >
@@ -21,9 +23,28 @@ const ProjectCard = ({ name, image, category, info }) => {
         className="transition-all duration-700 ease-in-out absolute bg-black/90 h-full w-full p-4 font-poppins flex flex-col justify-between translate-y-3/4 text-white
       "
       >
-        <h1 className="font-bold ">{name}</h1>
+        <div className="transition-all duration-700 ease-in-out flex justify-between items-center">
+          <h1 className="font-bold ">{name}</h1>
+        </div>
         <p className="text-sm">{info}</p>
-        <footer>icon</footer>
+        <footer className="flex justify-between items-center">
+          <div className="flex text-sm space-x-1 items-center">
+            {/* <span className="bg-gray-700 px-2 py-1">html</span> */}
+            <span className="bg-gray-500 px-2 py-1"> tailwind css</span>
+            <span className="bg-gray-500 px-2 py-1">react</span>
+          </div>
+          <figure className="text-2xl flex space-x-5 items-center">
+            <FaGithub />
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-all duration-150 ease-in-out text-sm font-bold lg:hover:text-red-500"
+            >
+              live
+            </a>
+          </figure>
+        </footer>
       </aside>
     </article>
   );

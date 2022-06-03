@@ -6,5 +6,6 @@ import rp05 from "./rp-05-accordion.png";
 import rp06 from "./rp-06-lorem-ipsusm.png";
 import rp07 from "./rp-07-color-generator.png";
 import rp08 from "./rp-08-menu.png";
+import siddhi from "./siddhi-landing-page.png"
 
-export { rp01, rp02, rp03, rp04, rp05, rp06, rp07, rp08 };
+export { rp01, rp02, rp03, rp04, rp05, rp06, rp07, rp08, siddhi };

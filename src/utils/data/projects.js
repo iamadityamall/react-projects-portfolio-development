@@ -7,6 +7,7 @@ import {
   // rp06,
   // rp07,
   // rp08,
+  siddhi,
 } from "../../assests/images";
 
 export const projects = [
@@ -16,6 +17,7 @@ export const projects = [
     name: "birthday-reminder-list",
     info: "lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
     image: rp01,
+    url: "",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const projects = [
     name: "github-users-list",
     info: "lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
     image: rp02,
+    url: "",
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ export const projects = [
     name: "tours-list",
     info: "lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
     image: rp03,
+    url: "",
   },
   {
     id: 4,
@@ -37,6 +41,7 @@ export const projects = [
     name: "testimonials",
     info: "lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
     image: rp04,
+    url: "",
   },
   {
     id: 5,
@@ -44,5 +49,14 @@ export const projects = [
     name: "accordion",
     info: "lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using ",
     image: rp05,
+    url: "",
+  },
+  {
+    id: 6,
+    category: "freelance",
+    name: "landing-page",
+    info: "Build a landing page for my client siddhivinayak logistics. Made it simple with little bit of animations and responsive design. ",
+    image: siddhi,
+    url: "https://siddhilogistics.netlify.app/",
   },
 ];

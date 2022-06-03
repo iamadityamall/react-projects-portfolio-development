@@ -14,8 +14,8 @@ const Home = () => {
       <Hero />
       <About />
       <SkillsBanner />
-      <Contact />
       <Projects />
+      <Contact />
     </main>
   );
 };
