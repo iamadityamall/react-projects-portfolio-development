@@ -30,7 +30,17 @@ const Footer = () => {
             </h1>
             <div className="flex space-x-3 text-xl md:justify-center lg:text-3xl">
               {socialLinks.map((link) => {
-                return <span key={link.id}>{link.icon}</span>;
+                return (
+                  <a
+                    href={link.path}
+                    target="_blank
+                "
+                    rel="noreferrer"
+                    key={link.id}
+                  >
+                    {link.icon}
+                  </a>
+                );
               })}
             </div>
           </div>

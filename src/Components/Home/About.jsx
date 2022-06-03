@@ -10,7 +10,10 @@ const About = () => {
       className="transition-all duration-200 ease-in-out grid grid-cols-1 gap-y-5 justify-items-center  md:grid-cols-2 md:gap-y-0 md:gap-x-2 md:h-screen md:place-items-center"
     >
       {/* image container */}
-      <figure className="transition-all duration-200 ease-in-out overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-auto  md:mr-0 md:rounded-xl xl:h-[70vh] xl:w-fit">
+      <figure
+        data-aos="fade-in"
+        className="transition-all duration-200 ease-in-out overflow-hidden rounded-full w-[200px] h-[200px] md:w-full md:h-auto  md:mr-0 md:rounded-xl xl:h-[70vh] xl:w-fit"
+      >
         <img
           src={aboutImage}
           alt="about"
@@ -18,7 +21,10 @@ const About = () => {
         />
       </figure>
       {/* info container */}
-      <div className="transition-all duration-700 ease-in-out flex flex-col items-center space-y-10  p-4 md:space-y-4 md:p-2 md:items-start ">
+      <div
+        data-aos="fade-in"
+        className="transition-all duration-700 ease-in-out flex flex-col items-center space-y-10  p-4 md:space-y-4 md:p-2 md:items-start "
+      >
         <div className="transition-all duration-700 ease-in-out flex justify-start">
           <h1 className="transition-all duration-700 ease-in-out font-bold font-poppins text-4xl py-1 border-b-4 border-black xl:text-6xl">
             About Me
@@ -34,8 +40,8 @@ const About = () => {
           </p>
           <p>
             Hi, I am Aditya, a self taught frontend developer. My goal is to
-            become a software engineer and build scalable, interactive web
-            apps. Feel free to Connect or Follow me on my{" "}
+            become a software engineer and build scalable, interactive web apps.
+            Feel free to Connect or Follow me on my{" "}
             <span className="text-gray-800 font-semibold">
               <a
                 href="https://linkedin.com/in/adityaharendramall/"

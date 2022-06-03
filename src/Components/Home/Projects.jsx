@@ -25,6 +25,7 @@ const Projects = () => {
 
   return (
     <section
+      data-aos="fade-in"
       id="projects"
       className="transition-all duration-200 ease-in-out flex flex-col space-y-10 py-10 lg:py:20"
     >

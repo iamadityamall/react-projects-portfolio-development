@@ -11,7 +11,10 @@ const Hero = () => {
       id="hero"
       className="h-screen md:mt-0 md:h-screen grid grid-cols-1 items-center justify-items-end md:grid-cols-2 lg:mt-10"
     >
-      <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-2 py-10 px-4 ">
+      <div
+        data-aos="fade-in"
+        className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-2 py-10 px-4 "
+      >
         <div className="translate-all duration-[2000ms] ease-in-out flex flex-col space-y-2">
           <span className="text-2xl font-poppins font-bold lg:text-4xl xl:text-6xl">
             I Build Things That Live on the Internet.
@@ -64,7 +67,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <figure className="hidden w-full overflow-hidden rounded-xl md:block 2xl:w-5/6 ">
+      <figure data-aos="fade-in" className="hidden w-full overflow-hidden rounded-xl md:block 2xl:w-5/6 ">
         <img
           src={heroImage}
           alt="hero"
