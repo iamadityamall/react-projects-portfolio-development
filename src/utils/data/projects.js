@@ -19,6 +19,7 @@ export const projects = [
     info: "Utilized useState hook with map array method for iterating data. enabled reset button when length of birthdays equaled to one use conditional rendering.",
     image: rp01,
     url: "https://rp-birthday-reminder-ui.netlify.app/",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const projects = [
     info: "Fetched data through api, using async await in useEffect hooks with empty dependency to run it only on its first render.(https://api.github.com/users) ",
     image: rp02,
     url: "https://rp-github-users.netlify.app/",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ export const projects = [
     info: "Used conditional rendering for read more and show less. implemented try and catch method for fetching the data from api, and passed functions through prop drilling. ",
     image: rp03,
     url: "https://rp-tours-card.netlify.app/",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ export const projects = [
     info: "useState is used to change the reviews and math random method we generated random indexes to populate the reviews. ",
     image: rp04,
     url: "https://rp-reviews.netlify.app/",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ export const projects = [
     info: "Basic question and answer accordion, made with conditionally rendering to display answers on demand. Data fetched is locally stored and iterated in reuseable component singlequestion.",
     image: rp05,
     url: "",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ export const projects = [
     info: "Build a landing page for my client siddhivinayak logistics. Made it simple with little bit of animations and responsive design. ",
     image: siddhi,
     url: "https://siddhilogistics.netlify.app/",
+    technologyUsed: ["react", "tailwind"],
   },
   {
     id: 7,
@@ -67,5 +73,6 @@ export const projects = [
     info: "This is a practise project using just html. revising most of the html tags used. ",
     image: coffeeLanding,
     url: "https://html-css-project-coffee-landing-page.netlify.app/",
+    technologyUsed: ["html"],
   },
 ];

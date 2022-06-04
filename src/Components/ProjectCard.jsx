@@ -1,6 +1,6 @@
 // import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({ name, image, category, info, url }) => {
+const ProjectCard = ({ name, image, category, info, url, technologyUsed }) => {
   const translateFull = (id) => {
     const aside = document.querySelector(`#${id}`);
     aside.style.transform = "translateY(0)";
@@ -28,10 +28,15 @@ const ProjectCard = ({ name, image, category, info, url }) => {
         </div>
         <p className="text-sm">{info}</p>
         <footer className="flex justify-between items-center">
-          <div className="flex text-sm space-x-1 items-center">
-            {/* <span className="bg-gray-700 px-2 py-1">html</span> */}
-            <span className="bg-gray-500 px-2 py-1"> tailwind css</span>
-            <span className="bg-gray-500 px-2 py-1">react</span>
+          <div className="flex text-sm space-x-2 items-center">
+            {technologyUsed.map((item, index) => {
+              
+              return (
+                <span key={index} className="bg-gray-500 px-2 py-1">
+                  {item}
+                </span>
+              );
+            })}
           </div>
           <figure className="text-2xl flex space-x-5 items-center">
             {/* <FaGithub /> */}
