@@ -8,6 +8,7 @@ import {
   // rp07,
   // rp08,
   siddhi,
+  coffeeLanding,
 } from "../../assests/images";
 
 export const projects = [
@@ -58,5 +59,13 @@ export const projects = [
     info: "Build a landing page for my client siddhivinayak logistics. Made it simple with little bit of animations and responsive design. ",
     image: siddhi,
     url: "https://siddhilogistics.netlify.app/",
+  },
+  {
+    id: 7,
+    category: "html-css",
+    name: "coffee-landing-page",
+    info: "This is a practise project using just html. revising most of the html tags used. ",
+    image: coffeeLanding,
+    url: "https://html-css-project-coffee-landing-page.netlify.app/",
   },
 ];
