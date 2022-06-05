@@ -8,5 +8,6 @@ import rp07 from "./rp-07-color-generator.png";
 import rp08 from "./rp-08-menu.png";
 import siddhi from "./siddhi-landing-page.png"
 import coffeeLanding from "./html-css-project-01-coffee-landing-page.png"
+import cssFundamental from "./html-css-project-02-css-fundamentals.png"
 
-export { rp01, rp02, rp03, rp04, rp05, rp06, rp07, rp08, siddhi, coffeeLanding };
+export { rp01, rp02, rp03, rp04, rp05, rp06, rp07, rp08, siddhi, coffeeLanding, cssFundamental };

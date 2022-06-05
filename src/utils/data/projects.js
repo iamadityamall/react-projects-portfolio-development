@@ -9,6 +9,7 @@ import {
   // rp08,
   siddhi,
   coffeeLanding,
+  cssFundamental
 } from "../../assests/images";
 
 export const projects = [
@@ -74,5 +75,14 @@ export const projects = [
     image: coffeeLanding,
     url: "https://html-css-project-coffee-landing-page.netlify.app/",
     technologyUsed: ["html"],
+  },
+  {
+    id: 8,
+    category: "html-css",
+    name: "css-fundamental",
+    info: "This is a practise project using just html and css using combine selectors. ",
+    image: cssFundamental,
+    url: "https://html-css-project-fundamental.netlify.app/",
+    technologyUsed: ["html, css"],
   },
 ];
