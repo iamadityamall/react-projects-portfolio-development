@@ -9,7 +9,8 @@ import {
   // rp08,
   siddhi,
   coffeeLanding,
-  cssFundamental
+  cssFundamental,
+  colors,
 } from "../../assests/images";
 
 export const projects = [
@@ -83,6 +84,15 @@ export const projects = [
     info: "This is a practise project using just html and css using combine selectors. ",
     image: cssFundamental,
     url: "https://html-css-project-fundamental.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
+  {
+    id: 9,
+    category: "html-css",
+    name: "colors",
+    info: "This is a practise project using just html and css using combine selectors and using different colors mode like rgba, rgb, hex, colors/ ",
+    image: colors,
+    url: "https://html-css-projects-colors.netlify.app/",
     technologyUsed: ["html, css"],
   },
 ];
