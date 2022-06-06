@@ -14,7 +14,8 @@ import {
   units,
   typography,
   cardModal,
-  displayProperty
+  displayProperty,
+  kofi
 } from "../../assests/images";
 
 export const projects = [
@@ -133,6 +134,15 @@ export const projects = [
     info: "This is a practise project using just html and css using display properties like block, inline, block-inline",
     image: displayProperty,
     url: "https://html-css-display-property.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
+  {
+    id: 14,
+    category: "html-css",
+    name: "kofi",
+    info: "This is a practise project using just html and css using background images and background properties",
+    image: kofi,
+    url: "https://html-css-projects-kofi.netlify.app/",
     technologyUsed: ["html, css"],
   },
 ];
