@@ -13,6 +13,7 @@ import colors from "./html-css-project-03-colors.png";
 import units from "./html-css-project-04-units.png";
 import typography from "./html-css-project-05-typography.png";
 import cardModal from "./html-css-project-06-card-modal.png"
+import displayProperty from "./html-css-project-07-display-property.png"
 
 export {
   rp01,
@@ -29,5 +30,6 @@ export {
   colors,
   units,
   typography,
-  cardModal
+  cardModal,
+  displayProperty
 };

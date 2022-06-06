@@ -13,7 +13,8 @@ import {
   colors,
   units,
   typography,
-  cardModal
+  cardModal,
+  displayProperty
 } from "../../assests/images";
 
 export const projects = [
@@ -125,4 +126,14 @@ export const projects = [
     url: "https://html-css-projects-card-modal.netlify.app/",
     technologyUsed: ["html, css"],
   },
+  {
+    id: 13,
+    category: "html-css",
+    name: "display-property",
+    info: "This is a practise project using just html and css using display properties like block, inline, block-inline",
+    image: displayProperty,
+    url: "https://html-css-display-property.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
 ];
+
