@@ -11,6 +11,7 @@ import {
   coffeeLanding,
   cssFundamental,
   colors,
+  units,
 } from "../../assests/images";
 
 export const projects = [
@@ -93,6 +94,15 @@ export const projects = [
     info: "This is a practise project using just html and css using combine selectors and using different colors mode like rgba, rgb, hex, colors/ ",
     image: colors,
     url: "https://html-css-projects-colors.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
+  {
+    id: 10,
+    category: "html-css",
+    name: "units",
+    info: "This is a practise project using just html and css using combine selectors and using units and methods like cal(), min-height, max-height ",
+    image: units,
+    url: "https://html-css-projects-units.netlify.app/",
     technologyUsed: ["html, css"],
   },
 ];
