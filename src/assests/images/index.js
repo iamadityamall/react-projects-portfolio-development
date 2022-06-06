@@ -12,6 +12,7 @@ import cssFundamental from "./html-css-project-02-css-fundamentals.png";
 import colors from "./html-css-project-03-colors.png";
 import units from "./html-css-project-04-units.png";
 import typography from "./html-css-project-05-typography.png";
+import cardModal from "./html-css-project-06-card-modal.png"
 
 export {
   rp01,
@@ -28,4 +29,5 @@ export {
   colors,
   units,
   typography,
+  cardModal
 };

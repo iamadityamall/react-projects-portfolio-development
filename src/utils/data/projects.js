@@ -12,7 +12,8 @@ import {
   cssFundamental,
   colors,
   units,
-  typography
+  typography,
+  cardModal
 } from "../../assests/images";
 
 export const projects = [
@@ -113,6 +114,15 @@ export const projects = [
     info: "This is a practise project using just html and css using properties like text-transform, line-height, letter-spacing and word-spacing. ",
     image: typography,
     url: "https://html-css-projects-typography.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
+  {
+    id: 12,
+    category: "html-css",
+    name: "card-modal",
+    info: "This is a practise project using just html and css using box modal properties like padding, border, margin, border-radius. ",
+    image: cardModal,
+    url: "https://html-css-projects-card-modal.netlify.app/",
     technologyUsed: ["html, css"],
   },
 ];
