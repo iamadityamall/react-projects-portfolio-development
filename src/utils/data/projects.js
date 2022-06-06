@@ -12,6 +12,7 @@ import {
   cssFundamental,
   colors,
   units,
+  typography
 } from "../../assests/images";
 
 export const projects = [
@@ -103,6 +104,15 @@ export const projects = [
     info: "This is a practise project using just html and css using combine selectors and using units and methods like cal(), min-height, max-height ",
     image: units,
     url: "https://html-css-projects-units.netlify.app/",
+    technologyUsed: ["html, css"],
+  },
+  {
+    id: 11,
+    category: "html-css",
+    name: "typography",
+    info: "This is a practise project using just html and css using properties like text-transform, line-height, letter-spacing and word-spacing. ",
+    image: typography,
+    url: "https://html-css-projects-typography.netlify.app/",
     technologyUsed: ["html, css"],
   },
 ];
