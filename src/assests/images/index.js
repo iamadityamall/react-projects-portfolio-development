@@ -15,6 +15,7 @@ import typography from "./html-css-project-05-typography.png";
 import cardModal from "./html-css-project-06-card-modal.png"
 import displayProperty from "./html-css-project-07-display-property.png";
 import kofi from "./html-css-project-08-kofi.png"
+import CV from "../Aditya-Harendra-Mall_Resume.pdf"
 
 export {
   rp01,
@@ -33,5 +34,6 @@ export {
   typography,
   cardModal,
   displayProperty,
-  kofi
+  kofi,
+  CV
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImage from "../../assests/images/baby.jpg";
 import { useSelector } from "react-redux";
+import { CV } from "../../assests/images";
 
 const About = () => {
   const { isDarkmode } = useSelector((store) => store.navbar);
@@ -68,7 +69,7 @@ const About = () => {
           }`}
         >
           <a
-            href="https://resume-adityamall.netlify.app/"
+            href={CV}
             target="_blank"
             rel="noreferrer"
           >
